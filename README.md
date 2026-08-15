@@ -21,6 +21,13 @@ breakpoint):
   sidebar's own fold toggle, and switching sessions all close it.
 - **Details panel as a sheet** — opening a tool's details covers the chat as
   a full-screen sheet instead of rendering off-screen.
+- **Settings as a full-screen sheet** — the built-in settings modal is an
+  800px two-column dialog (188px nav rail + content column), which leaves
+  the content column at ~150px on a phone. At the narrow breakpoint the
+  shell is restacked into a full-bleed sheet: the nav rail becomes a
+  horizontal section strip (title + per-section icons dropped) and the
+  content column takes the full width. The sheet's own overlay already
+  covers the open drawer, so no drawer coordination is needed.
 - **Touch polish** — safe-area insets for notched phones, overscroll
   containment, `touch-action: manipulation` (no double-tap zoom delay), no
   tap-highlight flash, and a bottom-safe-area composer.

@@ -1,7 +1,7 @@
 {
   "name": "@deepseek-ai/dsh-mobile",
   "description": "Mobile-first overlay for the DeepSeek Harness web UI: full-width chat, sidebar-as-drawer, thumb-friendly composer, and safe-area/overscroll polish on touch devices.",
-  "version": "0.1.0-rc.6",
+  "version": "0.1.0-rc.7",
   "private": true,
   "type": "module",
   "main": "lib/index.js",
