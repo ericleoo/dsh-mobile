@@ -28,6 +28,15 @@ breakpoint):
   horizontal section strip (title + per-section icons dropped) and the
   content column takes the full width. The sheet's own overlay already
   covers the open drawer, so no drawer coordination is needed.
+- **Directory picker as a full-screen sheet** — "Select Workspace Directory"
+  is a `min(680px, 100%)` dialog with a two-pane Miller column (each pane
+  min-width 256px), so on a phone the panes overflow and the footer wraps
+  to two rows. At the narrow breakpoint the dialog goes full-bleed, the
+  panes become full-width scroll-snap pages (the picker already
+  auto-scrolls to the newly opened child pane; swipe back to the parent),
+  and the footer becomes a single non-wrapping row that scrolls
+  horizontally when tight. The create-folder subdialog stays a centered
+  card.
 - **Touch polish** — safe-area insets for notched phones, overscroll
   containment, `touch-action: manipulation` (no double-tap zoom delay), no
   tap-highlight flash, and a bottom-safe-area composer.
