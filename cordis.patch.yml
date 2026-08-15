@@ -1,0 +1,13 @@
+# dsh-mobile bundle patch: mount the mobile-overlay plugin into the web
+# composition. Applied after @deepseek-ai/dsh-web-app (whose browser roster
+# this plugin's client half joins), and before any profile-level cordis.patch.yml.
+#
+# The entry is a dual-face package: the host row is a no-op (its node half
+# provides nothing), while the `dsh.client` declaration in its package.json
+# makes client-modules serve the browser half and the web shell boot it as a
+# client-side cordis entry. The client half's inject list (layout,
+# conversation, runtime, web-react) is what orders the graph edge — this row
+# only needs to exist.
+- insert:
+    - id: dsh-mobile
+      name: '@deepseek-ai/dsh-mobile'
