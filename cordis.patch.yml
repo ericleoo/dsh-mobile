@@ -10,4 +10,4 @@
 # only needs to exist.
 - insert:
     - id: dsh-mobile
-      name: '@deepseek-ai/dsh-mobile'
+      name: '@ericleoo/dsh-mobile'

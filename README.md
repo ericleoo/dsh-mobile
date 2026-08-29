@@ -1,4 +1,4 @@
-# @deepseek-ai/dsh-mobile
+# @ericleoo/dsh-mobile
 
 Mobile-first overlay for the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) web UI (`dsh web`).
 
@@ -72,10 +72,10 @@ The plugin lives at `$DSH_HOME/plugins/dsh-mobile` and is wired into the
 ```bash
 # from the web profile directory
 cd "$DSH_HOME/profiles/web"
-pnpm install    # links @deepseek-ai/dsh-mobile (already in package.json)
+pnpm install    # links @ericleoo/dsh-mobile (already in package.json)
 ```
 
-If you prefer a separate surface, add `"@deepseek-ai/dsh-mobile"` to the
+If you prefer a separate surface, add `"@ericleoo/dsh-mobile"` to the
 `dsh.profile.bundles` list of any other profile (for example a new
 `mobile` profile) — the bundle's patch layer applies the same way.
 
